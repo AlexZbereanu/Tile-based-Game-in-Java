@@ -1,0 +1,119 @@
+\hypertarget{class_paoo_game_1_1_states_1_1_play_state}{}\doxysection{Paoo\+Game.\+States.\+Play\+State Class Reference}
+\label{class_paoo_game_1_1_states_1_1_play_state}\index{PaooGame.States.PlayState@{PaooGame.States.PlayState}}
+Inheritance diagram for Paoo\+Game.\+States.\+Play\+State\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_paoo_game_1_1_states_1_1_play_state}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_paoo_game_1_1_states_1_1_play_state_a22abaac1886b7d3f08226f049ea6be55}{Play\+State}} (\mbox{\hyperlink{class_paoo_game_1_1_ref_links}{Ref\+Links}} \mbox{\hyperlink{class_paoo_game_1_1_states_1_1_state_a33bbc8822c2c6ec1c18639a803f5c1ba}{ref\+Link}})
+\begin{DoxyCompactList}\small\item\em Constructorul de initializare al clasei. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_paoo_game_1_1_states_1_1_play_state_a3513e0df6e2261fe01b6272f7eb5a2b4}{Update}} ()
+\begin{DoxyCompactList}\small\item\em Actualizeaza starea curenta a jocului. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_paoo_game_1_1_states_1_1_play_state_aed83eb541b8b4b3eeaeae34f97ae82fe}{Draw}} (Graphics g)
+\begin{DoxyCompactList}\small\item\em Deseneaza (randeaza) pe ecran starea curenta a jocului. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_paoo_game_1_1_items_1_1_entity_manager}{Entity\+Manager}} \mbox{\hyperlink{class_paoo_game_1_1_states_1_1_play_state_ab814a15e50790665d858baaf0721d8c0}{Get\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Returneaza un obiect al manager-\/ului de entitati. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_paoo_game_1_1_states_1_1_play_state_a1183b0565b8ed3c9af67e8e02d48606e}{Get\+Score}} ()
+\begin{DoxyCompactList}\small\item\em Returneaza scorul. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_paoo_game_1_1_states_1_1_play_state_a3764075adb9ab8968a2d500e517dac2e}{Set\+Score}} (int score)
+\begin{DoxyCompactList}\small\item\em Seteaza scorul. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_paoo_game_1_1_states_1_1_play_state_a22abaac1886b7d3f08226f049ea6be55}\label{class_paoo_game_1_1_states_1_1_play_state_a22abaac1886b7d3f08226f049ea6be55}} 
+\index{PaooGame.States.PlayState@{PaooGame.States.PlayState}!PlayState@{PlayState}}
+\index{PlayState@{PlayState}!PaooGame.States.PlayState@{PaooGame.States.PlayState}}
+\doxysubsubsection{\texorpdfstring{PlayState()}{PlayState()}}
+{\footnotesize\ttfamily public Paoo\+Game.\+States.\+Play\+State.\+Play\+State (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_paoo_game_1_1_ref_links}{Ref\+Links}}}]{ref\+Link }\end{DoxyParamCaption})}
+
+
+
+Constructorul de initializare al clasei. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ref\+Link} & O referinta catre un obiect \char`\"{}shortcut\char`\"{}, obiect ce contine o serie de referinte utile in program. \\
+\hline
+\end{DoxyParams}
+Apel al constructorului clasei de baza
+
+Construieste harta jocului
+
+Referinta catre harta construita este setata si in obiectul shortcut pentru a fi accesibila si in alte clase ale programului.
+
+Construieste managerul de entitati si adauga entitatile in joc.
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_paoo_game_1_1_states_1_1_play_state_aed83eb541b8b4b3eeaeae34f97ae82fe}\label{class_paoo_game_1_1_states_1_1_play_state_aed83eb541b8b4b3eeaeae34f97ae82fe}} 
+\index{PaooGame.States.PlayState@{PaooGame.States.PlayState}!Draw@{Draw}}
+\index{Draw@{Draw}!PaooGame.States.PlayState@{PaooGame.States.PlayState}}
+\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily public void Paoo\+Game.\+States.\+Play\+State.\+Draw (\begin{DoxyParamCaption}\item[{Graphics}]{g }\end{DoxyParamCaption})}
+
+
+
+Deseneaza (randeaza) pe ecran starea curenta a jocului. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & Contextul grafic in care trebuie sa deseneze starea jocului pe ecran. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_paoo_game_1_1_states_1_1_state_a1b7ea671618e0aaaf398e5fada65ab57}{Paoo\+Game.\+States.\+State}}.
+
+\mbox{\Hypertarget{class_paoo_game_1_1_states_1_1_play_state_ab814a15e50790665d858baaf0721d8c0}\label{class_paoo_game_1_1_states_1_1_play_state_ab814a15e50790665d858baaf0721d8c0}} 
+\index{PaooGame.States.PlayState@{PaooGame.States.PlayState}!GetManager@{GetManager}}
+\index{GetManager@{GetManager}!PaooGame.States.PlayState@{PaooGame.States.PlayState}}
+\doxysubsubsection{\texorpdfstring{GetManager()}{GetManager()}}
+{\footnotesize\ttfamily public \mbox{\hyperlink{class_paoo_game_1_1_items_1_1_entity_manager}{Entity\+Manager}} Paoo\+Game.\+States.\+Play\+State.\+Get\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returneaza un obiect al manager-\/ului de entitati. 
+
+\mbox{\Hypertarget{class_paoo_game_1_1_states_1_1_play_state_a1183b0565b8ed3c9af67e8e02d48606e}\label{class_paoo_game_1_1_states_1_1_play_state_a1183b0565b8ed3c9af67e8e02d48606e}} 
+\index{PaooGame.States.PlayState@{PaooGame.States.PlayState}!GetScore@{GetScore}}
+\index{GetScore@{GetScore}!PaooGame.States.PlayState@{PaooGame.States.PlayState}}
+\doxysubsubsection{\texorpdfstring{GetScore()}{GetScore()}}
+{\footnotesize\ttfamily public int Paoo\+Game.\+States.\+Play\+State.\+Get\+Score (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returneaza scorul. 
+
+\mbox{\Hypertarget{class_paoo_game_1_1_states_1_1_play_state_a3764075adb9ab8968a2d500e517dac2e}\label{class_paoo_game_1_1_states_1_1_play_state_a3764075adb9ab8968a2d500e517dac2e}} 
+\index{PaooGame.States.PlayState@{PaooGame.States.PlayState}!SetScore@{SetScore}}
+\index{SetScore@{SetScore}!PaooGame.States.PlayState@{PaooGame.States.PlayState}}
+\doxysubsubsection{\texorpdfstring{SetScore()}{SetScore()}}
+{\footnotesize\ttfamily public void Paoo\+Game.\+States.\+Play\+State.\+Set\+Score (\begin{DoxyParamCaption}\item[{int}]{score }\end{DoxyParamCaption})}
+
+
+
+Seteaza scorul. 
+
+\mbox{\Hypertarget{class_paoo_game_1_1_states_1_1_play_state_a3513e0df6e2261fe01b6272f7eb5a2b4}\label{class_paoo_game_1_1_states_1_1_play_state_a3513e0df6e2261fe01b6272f7eb5a2b4}} 
+\index{PaooGame.States.PlayState@{PaooGame.States.PlayState}!Update@{Update}}
+\index{Update@{Update}!PaooGame.States.PlayState@{PaooGame.States.PlayState}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily public void Paoo\+Game.\+States.\+Play\+State.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Actualizeaza starea curenta a jocului. 
+
+Daca se apasa tasta escape in joc se intra in meniu.
+
+Reimplemented from \mbox{\hyperlink{class_paoo_game_1_1_states_1_1_state_a358ce2dea3b960c707b1a7ed837e2355}{Paoo\+Game.\+States.\+State}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+States/\mbox{\hyperlink{_play_state_8java}{Play\+State.\+java}}\end{DoxyCompactItemize}

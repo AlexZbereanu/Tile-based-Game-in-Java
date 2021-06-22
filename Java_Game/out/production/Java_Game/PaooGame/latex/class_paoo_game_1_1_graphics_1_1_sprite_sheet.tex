@@ -1,0 +1,54 @@
+\hypertarget{class_paoo_game_1_1_graphics_1_1_sprite_sheet}{}\doxysection{Paoo\+Game.\+Graphics.\+Sprite\+Sheet Class Reference}
+\label{class_paoo_game_1_1_graphics_1_1_sprite_sheet}\index{PaooGame.Graphics.SpriteSheet@{PaooGame.Graphics.SpriteSheet}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_paoo_game_1_1_graphics_1_1_sprite_sheet_a8ed523c540a176a92b6c48046f5998ef}{Sprite\+Sheet}} (Buffered\+Image sprite\+Sheet)
+\begin{DoxyCompactList}\small\item\em Constructor, initializeaza sprite\+Sheet. \end{DoxyCompactList}\item 
+Buffered\+Image \mbox{\hyperlink{class_paoo_game_1_1_graphics_1_1_sprite_sheet_a4f839a9dceb0edda7f8571feea7c27b9}{crop}} (int x, int y, int width, int height)
+\begin{DoxyCompactList}\small\item\em Returneaza un obiect Buffered\+Image ce contine o subimage (dala). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_paoo_game_1_1_graphics_1_1_sprite_sheet_a8ed523c540a176a92b6c48046f5998ef}\label{class_paoo_game_1_1_graphics_1_1_sprite_sheet_a8ed523c540a176a92b6c48046f5998ef}} 
+\index{PaooGame.Graphics.SpriteSheet@{PaooGame.Graphics.SpriteSheet}!SpriteSheet@{SpriteSheet}}
+\index{SpriteSheet@{SpriteSheet}!PaooGame.Graphics.SpriteSheet@{PaooGame.Graphics.SpriteSheet}}
+\doxysubsubsection{\texorpdfstring{SpriteSheet()}{SpriteSheet()}}
+{\footnotesize\ttfamily public Paoo\+Game.\+Graphics.\+Sprite\+Sheet.\+Sprite\+Sheet (\begin{DoxyParamCaption}\item[{Buffered\+Image}]{sheet }\end{DoxyParamCaption})}
+
+
+
+Constructor, initializeaza sprite\+Sheet. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em buff\+Img} & Un obiect Buffered\+Image valid. \\
+\hline
+\end{DoxyParams}
+Retine referinta catre Buffered\+Image object.
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_paoo_game_1_1_graphics_1_1_sprite_sheet_a4f839a9dceb0edda7f8571feea7c27b9}\label{class_paoo_game_1_1_graphics_1_1_sprite_sheet_a4f839a9dceb0edda7f8571feea7c27b9}} 
+\index{PaooGame.Graphics.SpriteSheet@{PaooGame.Graphics.SpriteSheet}!crop@{crop}}
+\index{crop@{crop}!PaooGame.Graphics.SpriteSheet@{PaooGame.Graphics.SpriteSheet}}
+\doxysubsubsection{\texorpdfstring{crop()}{crop()}}
+{\footnotesize\ttfamily public Buffered\+Image Paoo\+Game.\+Graphics.\+Sprite\+Sheet.\+crop (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{width,  }\item[{int}]{height }\end{DoxyParamCaption})}
+
+
+
+Returneaza un obiect Buffered\+Image ce contine o subimage (dala). 
+
+Subimaginea este localizata avand ca referinta punctul din stanga sus.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & numarul dalei din sprite sheet pe axa x. \\
+\hline
+{\em y} & numarul dalei din sprite sheet pe axa y. \\
+\hline
+\end{DoxyParams}
+Subimaginea (dala) este regasita in sprite sheet specificad coltul stanga sus al imaginii si apoi latimea si inaltimea (totul in pixeli). Coltul din stanga sus al imaginii se obtine inmultind numarul de ordine al dalei cu dimensiunea in pixeli a unei dale.
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Graphics/\mbox{\hyperlink{_sprite_sheet_8java}{Sprite\+Sheet.\+java}}\end{DoxyCompactItemize}

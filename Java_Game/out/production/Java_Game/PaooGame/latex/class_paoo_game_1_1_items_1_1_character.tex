@@ -1,0 +1,211 @@
+\hypertarget{class_paoo_game_1_1_items_1_1_character}{}\doxysection{Paoo\+Game.\+Items.\+Character Class Reference}
+\label{class_paoo_game_1_1_items_1_1_character}\index{PaooGame.Items.Character@{PaooGame.Items.Character}}
+Inheritance diagram for Paoo\+Game.\+Items.\+Character\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_paoo_game_1_1_items_1_1_character}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_paoo_game_1_1_items_1_1_character_acc5253150a23ed59b81ccd32d5ab857f}{Character}} (\mbox{\hyperlink{class_paoo_game_1_1_ref_links}{Ref\+Links}} \mbox{\hyperlink{class_paoo_game_1_1_items_1_1_entity_ae4d038c069a3920ada6087b91c00e719}{ref\+Link}}, float \mbox{\hyperlink{class_paoo_game_1_1_items_1_1_entity_a819e0a72ff18f2e75b3ced1b242e2ac5}{x}}, float y, int \mbox{\hyperlink{class_paoo_game_1_1_items_1_1_entity_ae191c7896168c003acf57963559b80c3}{width}}, int height, int \mbox{\hyperlink{class_paoo_game_1_1_items_1_1_entity_abcdd4a550ba446dc65790c3e45f3fd8b}{health}})
+\begin{DoxyCompactList}\small\item\em Constructor de initializare al clasei \mbox{\hyperlink{class_paoo_game_1_1_items_1_1_character}{Character}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_paoo_game_1_1_items_1_1_character_acceee90b255f677f38d309fb1e4e753f}{Move}} ()
+\begin{DoxyCompactList}\small\item\em Modifica pozitia caracterului. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_paoo_game_1_1_items_1_1_character_a2a20fcd4bb44cab4ab80733e19355ed8}{MoveX}} ()
+\begin{DoxyCompactList}\small\item\em Modifica pozitia caracterului pe axa X. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_paoo_game_1_1_items_1_1_character_a9b578fe6d998225ce1295e8d948e78db}{MoveY}} ()
+\begin{DoxyCompactList}\small\item\em Modifica pozitia caracterului pe axa Y. \end{DoxyCompactList}\item 
+abstract void \mbox{\hyperlink{class_paoo_game_1_1_items_1_1_character_a79f36fcc0711e0972d8eb1ae314f411e}{die}} ()
+\begin{DoxyCompactList}\small\item\em Functie abstracta care are ca scop eliminarea unui jucator/inamic. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final float \mbox{\hyperlink{class_paoo_game_1_1_items_1_1_character_a0ab4e87f98f0108768bab9bbfa98d909}{D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+P\+E\+ED}} = 3.\+0f
+\item 
+static final int \mbox{\hyperlink{class_paoo_game_1_1_items_1_1_character_a21df4990cf26516ca414363ef498f59e}{D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+R\+E\+A\+T\+U\+R\+E\+\_\+\+W\+I\+D\+TH}} = 48
+\item 
+static final int \mbox{\hyperlink{class_paoo_game_1_1_items_1_1_character_a59c79fc091ffd42959cebfea9a69b9f3}{D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+R\+E\+A\+T\+U\+R\+E\+\_\+\+H\+E\+I\+G\+HT}} = 48
+\item 
+static final int \mbox{\hyperlink{class_paoo_game_1_1_items_1_1_character_ac1b6e41855887ddd1713096077a4f598}{D\+E\+F\+A\+U\+L\+T\+\_\+\+H\+E\+A\+L\+TH}} = 600
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+boolean \mbox{\hyperlink{class_paoo_game_1_1_items_1_1_character_a25cf80507a009a90bb9e61d64c2bf92e}{collision\+With\+Tile}} (int \mbox{\hyperlink{class_paoo_game_1_1_items_1_1_entity_a819e0a72ff18f2e75b3ced1b242e2ac5}{x}}, int y)
+\begin{DoxyCompactList}\small\item\em Returneaza un flag care indica daca tile-\/ul este solid sau nu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Rectangle \mbox{\hyperlink{class_paoo_game_1_1_items_1_1_character_ab775713e7ad7cb6e9a166776a17d451c}{normal\+Bounds}}
+\item 
+Rectangle \mbox{\hyperlink{class_paoo_game_1_1_items_1_1_character_a714305ecf5fe4f2186eb2a1329fa1da4}{attack\+Bounds}}
+\item 
+float \mbox{\hyperlink{class_paoo_game_1_1_items_1_1_character_a7d2142e794b0bebbd6616039b0553f72}{speed}}
+\item 
+float \mbox{\hyperlink{class_paoo_game_1_1_items_1_1_character_aae9d39819da02614bbd3878feb32235e}{x\+Move}}
+\item 
+float \mbox{\hyperlink{class_paoo_game_1_1_items_1_1_character_af67792029a5e902889dfb36806d0b59d}{y\+Move}}
+\item 
+float \mbox{\hyperlink{class_paoo_game_1_1_items_1_1_character_ab834901ea1c916a113267d3e7902e0ba}{health\+Bar}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_paoo_game_1_1_items_1_1_character_acc5253150a23ed59b81ccd32d5ab857f}\label{class_paoo_game_1_1_items_1_1_character_acc5253150a23ed59b81ccd32d5ab857f}} 
+\index{PaooGame.Items.Character@{PaooGame.Items.Character}!Character@{Character}}
+\index{Character@{Character}!PaooGame.Items.Character@{PaooGame.Items.Character}}
+\doxysubsubsection{\texorpdfstring{Character()}{Character()}}
+{\footnotesize\ttfamily public Paoo\+Game.\+Items.\+Character.\+Character (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_paoo_game_1_1_ref_links}{Ref\+Links}}}]{ref\+Link,  }\item[{float}]{x,  }\item[{float}]{y,  }\item[{int}]{width,  }\item[{int}]{height,  }\item[{int}]{health }\end{DoxyParamCaption})}
+
+
+
+Constructor de initializare al clasei \mbox{\hyperlink{class_paoo_game_1_1_items_1_1_character}{Character}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ref\+Link} & Referinta catre obiectul shortcut (care retine alte referinte utile/necesare in joc). \\
+\hline
+{\em x} & Pozitia de start pa axa X a caracterului. \\
+\hline
+{\em y} & Pozitia de start pa axa Y a caracterului. \\
+\hline
+{\em width} & Latimea imaginii caracterului. \\
+\hline
+{\em height} & Inaltimea imaginii caracterului. \\
+\hline
+{\em health} & Viata caracterului. \\
+\hline
+\end{DoxyParams}
+Apel constructor la clasei de baza
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_paoo_game_1_1_items_1_1_character_a25cf80507a009a90bb9e61d64c2bf92e}\label{class_paoo_game_1_1_items_1_1_character_a25cf80507a009a90bb9e61d64c2bf92e}} 
+\index{PaooGame.Items.Character@{PaooGame.Items.Character}!collisionWithTile@{collisionWithTile}}
+\index{collisionWithTile@{collisionWithTile}!PaooGame.Items.Character@{PaooGame.Items.Character}}
+\doxysubsubsection{\texorpdfstring{collisionWithTile()}{collisionWithTile()}}
+{\footnotesize\ttfamily protected boolean Paoo\+Game.\+Items.\+Character.\+collision\+With\+Tile (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Returneaza un flag care indica daca tile-\/ul este solid sau nu. 
+
+\mbox{\Hypertarget{class_paoo_game_1_1_items_1_1_character_a79f36fcc0711e0972d8eb1ae314f411e}\label{class_paoo_game_1_1_items_1_1_character_a79f36fcc0711e0972d8eb1ae314f411e}} 
+\index{PaooGame.Items.Character@{PaooGame.Items.Character}!die@{die}}
+\index{die@{die}!PaooGame.Items.Character@{PaooGame.Items.Character}}
+\doxysubsubsection{\texorpdfstring{die()}{die()}}
+{\footnotesize\ttfamily public abstract void Paoo\+Game.\+Items.\+Character.\+die (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+
+
+Functie abstracta care are ca scop eliminarea unui jucator/inamic. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_paoo_game_1_1_items_1_1_entity_af88bc842f36766f5e5b9ddab3cd54b8d}{Paoo\+Game.\+Items.\+Entity}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_paoo_game_1_1_items_1_1_hero_aa0860abd6a2c2d5ffd13f8f2844f6966}{Paoo\+Game.\+Items.\+Hero}}, and \mbox{\hyperlink{class_paoo_game_1_1_items_1_1_enemy_a40d91a65a35e14670af6afee9e883009}{Paoo\+Game.\+Items.\+Enemy}}.
+
+\mbox{\Hypertarget{class_paoo_game_1_1_items_1_1_character_acceee90b255f677f38d309fb1e4e753f}\label{class_paoo_game_1_1_items_1_1_character_acceee90b255f677f38d309fb1e4e753f}} 
+\index{PaooGame.Items.Character@{PaooGame.Items.Character}!Move@{Move}}
+\index{Move@{Move}!PaooGame.Items.Character@{PaooGame.Items.Character}}
+\doxysubsubsection{\texorpdfstring{Move()}{Move()}}
+{\footnotesize\ttfamily public void Paoo\+Game.\+Items.\+Character.\+Move (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Modifica pozitia caracterului. 
+
+Modifica pozitia caracterului pe axa X daca nu exista colisiuni cu alte entitati.
+
+Modifica pozitia caracterului pe axa X daca nu exista colisiuni cu alte entitati.\mbox{\Hypertarget{class_paoo_game_1_1_items_1_1_character_a2a20fcd4bb44cab4ab80733e19355ed8}\label{class_paoo_game_1_1_items_1_1_character_a2a20fcd4bb44cab4ab80733e19355ed8}} 
+\index{PaooGame.Items.Character@{PaooGame.Items.Character}!MoveX@{MoveX}}
+\index{MoveX@{MoveX}!PaooGame.Items.Character@{PaooGame.Items.Character}}
+\doxysubsubsection{\texorpdfstring{MoveX()}{MoveX()}}
+{\footnotesize\ttfamily public void Paoo\+Game.\+Items.\+Character.\+MoveX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Modifica pozitia caracterului pe axa X. 
+
+\mbox{\Hypertarget{class_paoo_game_1_1_items_1_1_character_a9b578fe6d998225ce1295e8d948e78db}\label{class_paoo_game_1_1_items_1_1_character_a9b578fe6d998225ce1295e8d948e78db}} 
+\index{PaooGame.Items.Character@{PaooGame.Items.Character}!MoveY@{MoveY}}
+\index{MoveY@{MoveY}!PaooGame.Items.Character@{PaooGame.Items.Character}}
+\doxysubsubsection{\texorpdfstring{MoveY()}{MoveY()}}
+{\footnotesize\ttfamily public void Paoo\+Game.\+Items.\+Character.\+MoveY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Modifica pozitia caracterului pe axa Y. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_paoo_game_1_1_items_1_1_character_a714305ecf5fe4f2186eb2a1329fa1da4}\label{class_paoo_game_1_1_items_1_1_character_a714305ecf5fe4f2186eb2a1329fa1da4}} 
+\index{PaooGame.Items.Character@{PaooGame.Items.Character}!attackBounds@{attackBounds}}
+\index{attackBounds@{attackBounds}!PaooGame.Items.Character@{PaooGame.Items.Character}}
+\doxysubsubsection{\texorpdfstring{attackBounds}{attackBounds}}
+{\footnotesize\ttfamily Rectangle Paoo\+Game.\+Items.\+Character.\+attack\+Bounds\hspace{0.3cm}{\ttfamily [protected]}}
+
+Colisiune de atac. \mbox{\Hypertarget{class_paoo_game_1_1_items_1_1_character_a59c79fc091ffd42959cebfea9a69b9f3}\label{class_paoo_game_1_1_items_1_1_character_a59c79fc091ffd42959cebfea9a69b9f3}} 
+\index{PaooGame.Items.Character@{PaooGame.Items.Character}!DEFAULT\_CREATURE\_HEIGHT@{DEFAULT\_CREATURE\_HEIGHT}}
+\index{DEFAULT\_CREATURE\_HEIGHT@{DEFAULT\_CREATURE\_HEIGHT}!PaooGame.Items.Character@{PaooGame.Items.Character}}
+\doxysubsubsection{\texorpdfstring{DEFAULT\_CREATURE\_HEIGHT}{DEFAULT\_CREATURE\_HEIGHT}}
+{\footnotesize\ttfamily final int Paoo\+Game.\+Items.\+Character.\+D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+R\+E\+A\+T\+U\+R\+E\+\_\+\+H\+E\+I\+G\+HT = 48\hspace{0.3cm}{\ttfamily [static]}}
+
+Inaltimea implicita a imaginii caracterului. \mbox{\Hypertarget{class_paoo_game_1_1_items_1_1_character_a21df4990cf26516ca414363ef498f59e}\label{class_paoo_game_1_1_items_1_1_character_a21df4990cf26516ca414363ef498f59e}} 
+\index{PaooGame.Items.Character@{PaooGame.Items.Character}!DEFAULT\_CREATURE\_WIDTH@{DEFAULT\_CREATURE\_WIDTH}}
+\index{DEFAULT\_CREATURE\_WIDTH@{DEFAULT\_CREATURE\_WIDTH}!PaooGame.Items.Character@{PaooGame.Items.Character}}
+\doxysubsubsection{\texorpdfstring{DEFAULT\_CREATURE\_WIDTH}{DEFAULT\_CREATURE\_WIDTH}}
+{\footnotesize\ttfamily final int Paoo\+Game.\+Items.\+Character.\+D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+R\+E\+A\+T\+U\+R\+E\+\_\+\+W\+I\+D\+TH = 48\hspace{0.3cm}{\ttfamily [static]}}
+
+Latimea implicita a imaginii caracterului. \mbox{\Hypertarget{class_paoo_game_1_1_items_1_1_character_ac1b6e41855887ddd1713096077a4f598}\label{class_paoo_game_1_1_items_1_1_character_ac1b6e41855887ddd1713096077a4f598}} 
+\index{PaooGame.Items.Character@{PaooGame.Items.Character}!DEFAULT\_HEALTH@{DEFAULT\_HEALTH}}
+\index{DEFAULT\_HEALTH@{DEFAULT\_HEALTH}!PaooGame.Items.Character@{PaooGame.Items.Character}}
+\doxysubsubsection{\texorpdfstring{DEFAULT\_HEALTH}{DEFAULT\_HEALTH}}
+{\footnotesize\ttfamily final int Paoo\+Game.\+Items.\+Character.\+D\+E\+F\+A\+U\+L\+T\+\_\+\+H\+E\+A\+L\+TH = 600\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_paoo_game_1_1_items_1_1_character_a0ab4e87f98f0108768bab9bbfa98d909}\label{class_paoo_game_1_1_items_1_1_character_a0ab4e87f98f0108768bab9bbfa98d909}} 
+\index{PaooGame.Items.Character@{PaooGame.Items.Character}!DEFAULT\_SPEED@{DEFAULT\_SPEED}}
+\index{DEFAULT\_SPEED@{DEFAULT\_SPEED}!PaooGame.Items.Character@{PaooGame.Items.Character}}
+\doxysubsubsection{\texorpdfstring{DEFAULT\_SPEED}{DEFAULT\_SPEED}}
+{\footnotesize\ttfamily final float Paoo\+Game.\+Items.\+Character.\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+P\+E\+ED = 3.\+0f\hspace{0.3cm}{\ttfamily [static]}}
+
+Viteza implicita a unu caracter. \mbox{\Hypertarget{class_paoo_game_1_1_items_1_1_character_ab834901ea1c916a113267d3e7902e0ba}\label{class_paoo_game_1_1_items_1_1_character_ab834901ea1c916a113267d3e7902e0ba}} 
+\index{PaooGame.Items.Character@{PaooGame.Items.Character}!healthBar@{healthBar}}
+\index{healthBar@{healthBar}!PaooGame.Items.Character@{PaooGame.Items.Character}}
+\doxysubsubsection{\texorpdfstring{healthBar}{healthBar}}
+{\footnotesize\ttfamily float Paoo\+Game.\+Items.\+Character.\+health\+Bar\hspace{0.3cm}{\ttfamily [protected]}}
+
+Bara de viata. \mbox{\Hypertarget{class_paoo_game_1_1_items_1_1_character_ab775713e7ad7cb6e9a166776a17d451c}\label{class_paoo_game_1_1_items_1_1_character_ab775713e7ad7cb6e9a166776a17d451c}} 
+\index{PaooGame.Items.Character@{PaooGame.Items.Character}!normalBounds@{normalBounds}}
+\index{normalBounds@{normalBounds}!PaooGame.Items.Character@{PaooGame.Items.Character}}
+\doxysubsubsection{\texorpdfstring{normalBounds}{normalBounds}}
+{\footnotesize\ttfamily Rectangle Paoo\+Game.\+Items.\+Character.\+normal\+Bounds\hspace{0.3cm}{\ttfamily [protected]}}
+
+Colisiune normala. \mbox{\Hypertarget{class_paoo_game_1_1_items_1_1_character_a7d2142e794b0bebbd6616039b0553f72}\label{class_paoo_game_1_1_items_1_1_character_a7d2142e794b0bebbd6616039b0553f72}} 
+\index{PaooGame.Items.Character@{PaooGame.Items.Character}!speed@{speed}}
+\index{speed@{speed}!PaooGame.Items.Character@{PaooGame.Items.Character}}
+\doxysubsubsection{\texorpdfstring{speed}{speed}}
+{\footnotesize\ttfamily float Paoo\+Game.\+Items.\+Character.\+speed\hspace{0.3cm}{\ttfamily [protected]}}
+
+Retine viteza de deplasare caracterului. \mbox{\Hypertarget{class_paoo_game_1_1_items_1_1_character_aae9d39819da02614bbd3878feb32235e}\label{class_paoo_game_1_1_items_1_1_character_aae9d39819da02614bbd3878feb32235e}} 
+\index{PaooGame.Items.Character@{PaooGame.Items.Character}!xMove@{xMove}}
+\index{xMove@{xMove}!PaooGame.Items.Character@{PaooGame.Items.Character}}
+\doxysubsubsection{\texorpdfstring{xMove}{xMove}}
+{\footnotesize\ttfamily float Paoo\+Game.\+Items.\+Character.\+x\+Move\hspace{0.3cm}{\ttfamily [protected]}}
+
+Retine noua pozitie a caracterului pe axa X. \mbox{\Hypertarget{class_paoo_game_1_1_items_1_1_character_af67792029a5e902889dfb36806d0b59d}\label{class_paoo_game_1_1_items_1_1_character_af67792029a5e902889dfb36806d0b59d}} 
+\index{PaooGame.Items.Character@{PaooGame.Items.Character}!yMove@{yMove}}
+\index{yMove@{yMove}!PaooGame.Items.Character@{PaooGame.Items.Character}}
+\doxysubsubsection{\texorpdfstring{yMove}{yMove}}
+{\footnotesize\ttfamily float Paoo\+Game.\+Items.\+Character.\+y\+Move\hspace{0.3cm}{\ttfamily [protected]}}
+
+Retine noua pozitie a caracterului pe axa Y. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Items/\mbox{\hyperlink{_character_8java}{Character.\+java}}\end{DoxyCompactItemize}

@@ -1,0 +1,219 @@
+\hypertarget{class_paoo_game_1_1_game}{}\doxysection{Paoo\+Game.\+Game Class Reference}
+\label{class_paoo_game_1_1_game}\index{PaooGame.Game@{PaooGame.Game}}
+
+
+Clasa principala a intregului proiect. Implementeaza \mbox{\hyperlink{class_paoo_game_1_1_game}{Game}} -\/ Loop (Update -\/$>$ Draw)  
+
+
+Inheritance diagram for Paoo\+Game.\+Game\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_paoo_game_1_1_game}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_paoo_game_1_1_game_a9ad6403ed3c853e7edf8c7de62d623e9}{run}} ()
+\begin{DoxyCompactList}\small\item\em Functia ce va rula in thread-\/ul creat. \end{DoxyCompactList}\item 
+synchronized void \mbox{\hyperlink{class_paoo_game_1_1_game_a375b293fea9aedc354b931dd2992dfae}{Start\+Game}} ()
+\begin{DoxyCompactList}\small\item\em Creaza si starteaza firul separat de executie (thread). \end{DoxyCompactList}\item 
+synchronized void \mbox{\hyperlink{class_paoo_game_1_1_game_a3697dc249cd795b7aff9f1d48708be69}{Stop\+Game}} ()
+\item 
+int \mbox{\hyperlink{class_paoo_game_1_1_game_ad47c83496d924b587f8d3f78b8f5e7b1}{Get\+Width}} ()
+\begin{DoxyCompactList}\small\item\em Returneaza latimea ferestrei. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_paoo_game_1_1_game_ab48327450bbfd2689e13e8a7da15dcfe}{Get\+Height}} ()
+\begin{DoxyCompactList}\small\item\em Returneaza inaltimea ferestrei. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_paoo_game_1_1_input_1_1_key_manager}{Key\+Manager}} \mbox{\hyperlink{class_paoo_game_1_1_game_ae7f73a3c2c2e0a124eb51fcae931b0cd}{Get\+Key\+Manager}} ()
+\item 
+\mbox{\hyperlink{class_paoo_game_1_1_input_1_1_mouse_manager}{Mouse\+Manager}} \mbox{\hyperlink{class_paoo_game_1_1_game_a9b902c8fa0f83aa9b085429c242d0856}{Get\+Mouse\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Returneaza managerul evenimentelor mouse-\/ului. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_paoo_game_1_1_graphics_1_1_game_camera}{Game\+Camera}} \mbox{\hyperlink{class_paoo_game_1_1_game_a3457d305a03964f5bb3b10621e1dbce0}{Get\+Camera}} ()
+\begin{DoxyCompactList}\small\item\em Returneaza camera jocului. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_paoo_game_1_1_states_1_1_play_state}{Play\+State}} \mbox{\hyperlink{class_paoo_game_1_1_game_ad55beb63b3d51c387db3339af0e96a72}{Get\+Play\+State}} ()
+\begin{DoxyCompactList}\small\item\em Returneaza starea de joc. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_paoo_game_1_1_states_1_1_state}{State}} \mbox{\hyperlink{class_paoo_game_1_1_game_a375e94d905fb1a2149e699a2b02932bb}{Get\+Menu\+State}} ()
+\begin{DoxyCompactList}\small\item\em Returneaza starea de meniu. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_paoo_game_1_1_states_1_1_state}{State}} \mbox{\hyperlink{class_paoo_game_1_1_game_a9f3833fd1dcbd775565787e1ddfff91c}{Get\+Game\+Over\+State}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_paoo_game_1_1_game}{Game}} \mbox{\hyperlink{class_paoo_game_1_1_game_a9839dcd368b62f28175095e93d23931a}{Get\+Game}} ()
+\begin{DoxyCompactList}\small\item\em Returneaza o instanta statica a jocului. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clasa principala a intregului proiect. Implementeaza \mbox{\hyperlink{class_paoo_game_1_1_game}{Game}} -\/ Loop (Update -\/$>$ Draw) 
+
+\DoxyHorRuler{0}
+ $\vert$ $\vert$ $\vert$ -\/-\/-\/-\/-\/-\/-\/-\/-\/--- 60 times/s $\vert$ $\vert$ Update $\vert$ -\/-\/$>$\{ actualizeaza variabile, stari, pozitii ale elementelor grafice etc. = $\vert$ -\/-\/-\/-\/-\/-\/-\/-\/-\/--- 16.\+7 ms $\vert$ $\vert$ $\vert$ -\/-\/-\/-\/-\/-\/-\/-\/-\/--- $\vert$ $\vert$ Draw $\vert$ -\/-\/$>$\{ deseneaza totul pe ecran $\vert$ -\/-\/-\/-\/-\/-\/-\/-\/-\/--- \hypertarget{class_paoo_game_1_1_game_autotoc_md1}{}\doxysubsubsection{$\vert$           $\vert$}\label{class_paoo_game_1_1_game_autotoc_md1}
+Implementeaza interfata Runnable\+: \begin{DoxyVerb}public interface Runnable {
+    public void run();
+}
+\end{DoxyVerb}
+
+
+Interfata este utilizata pentru a crea un nou fir de executie avand ca argument clasa \mbox{\hyperlink{class_paoo_game_1_1_game}{Game}}. Clasa \mbox{\hyperlink{class_paoo_game_1_1_game}{Game}} trebuie sa aiba definita metoda \char`\"{}public void run()\char`\"{}, metoda ce va fi apelata in noul thread(fir de executie). Mai multe explicatii veti primi la curs.
+
+In mod obisnuit aceasta clasa trebuie sa contina urmatoarele\+:
+\begin{DoxyItemize}
+\item public Game(); //constructor
+\item private void init(); //metoda privata de initializare
+\item private void update(); //metoda privata de actualizare a elementelor jocului
+\item private void draw(); //metoda privata de desenare a tablei de joc
+\item public \mbox{\hyperlink{class_paoo_game_1_1_game_a9ad6403ed3c853e7edf8c7de62d623e9}{run()}}; //metoda publica ce va fi apelata de noul fir de executie
+\item public synchronized void start(); //metoda publica de pornire a jocului
+\item public synchronized void stop() //metoda publica de oprire a jocului 
+\end{DoxyItemize}
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_paoo_game_1_1_game_a3457d305a03964f5bb3b10621e1dbce0}\label{class_paoo_game_1_1_game_a3457d305a03964f5bb3b10621e1dbce0}} 
+\index{PaooGame.Game@{PaooGame.Game}!GetCamera@{GetCamera}}
+\index{GetCamera@{GetCamera}!PaooGame.Game@{PaooGame.Game}}
+\doxysubsubsection{\texorpdfstring{GetCamera()}{GetCamera()}}
+{\footnotesize\ttfamily public \mbox{\hyperlink{class_paoo_game_1_1_graphics_1_1_game_camera}{Game\+Camera}} Paoo\+Game.\+Game.\+Get\+Camera (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returneaza camera jocului. 
+
+\mbox{\Hypertarget{class_paoo_game_1_1_game_a9839dcd368b62f28175095e93d23931a}\label{class_paoo_game_1_1_game_a9839dcd368b62f28175095e93d23931a}} 
+\index{PaooGame.Game@{PaooGame.Game}!GetGame@{GetGame}}
+\index{GetGame@{GetGame}!PaooGame.Game@{PaooGame.Game}}
+\doxysubsubsection{\texorpdfstring{GetGame()}{GetGame()}}
+{\footnotesize\ttfamily public static \mbox{\hyperlink{class_paoo_game_1_1_game}{Game}} Paoo\+Game.\+Game.\+Get\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returneaza o instanta statica a jocului. 
+
+\mbox{\Hypertarget{class_paoo_game_1_1_game_a9f3833fd1dcbd775565787e1ddfff91c}\label{class_paoo_game_1_1_game_a9f3833fd1dcbd775565787e1ddfff91c}} 
+\index{PaooGame.Game@{PaooGame.Game}!GetGameOverState@{GetGameOverState}}
+\index{GetGameOverState@{GetGameOverState}!PaooGame.Game@{PaooGame.Game}}
+\doxysubsubsection{\texorpdfstring{GetGameOverState()}{GetGameOverState()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_paoo_game_1_1_states_1_1_state}{State}} Paoo\+Game.\+Game.\+Get\+Game\+Over\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_paoo_game_1_1_game_ab48327450bbfd2689e13e8a7da15dcfe}\label{class_paoo_game_1_1_game_ab48327450bbfd2689e13e8a7da15dcfe}} 
+\index{PaooGame.Game@{PaooGame.Game}!GetHeight@{GetHeight}}
+\index{GetHeight@{GetHeight}!PaooGame.Game@{PaooGame.Game}}
+\doxysubsubsection{\texorpdfstring{GetHeight()}{GetHeight()}}
+{\footnotesize\ttfamily public int Paoo\+Game.\+Game.\+Get\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returneaza inaltimea ferestrei. 
+
+\mbox{\Hypertarget{class_paoo_game_1_1_game_ae7f73a3c2c2e0a124eb51fcae931b0cd}\label{class_paoo_game_1_1_game_ae7f73a3c2c2e0a124eb51fcae931b0cd}} 
+\index{PaooGame.Game@{PaooGame.Game}!GetKeyManager@{GetKeyManager}}
+\index{GetKeyManager@{GetKeyManager}!PaooGame.Game@{PaooGame.Game}}
+\doxysubsubsection{\texorpdfstring{GetKeyManager()}{GetKeyManager()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_paoo_game_1_1_input_1_1_key_manager}{Key\+Manager}} Paoo\+Game.\+Game.\+Get\+Key\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_paoo_game_1_1_game_a375e94d905fb1a2149e699a2b02932bb}\label{class_paoo_game_1_1_game_a375e94d905fb1a2149e699a2b02932bb}} 
+\index{PaooGame.Game@{PaooGame.Game}!GetMenuState@{GetMenuState}}
+\index{GetMenuState@{GetMenuState}!PaooGame.Game@{PaooGame.Game}}
+\doxysubsubsection{\texorpdfstring{GetMenuState()}{GetMenuState()}}
+{\footnotesize\ttfamily public \mbox{\hyperlink{class_paoo_game_1_1_states_1_1_state}{State}} Paoo\+Game.\+Game.\+Get\+Menu\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returneaza starea de meniu. 
+
+\mbox{\Hypertarget{class_paoo_game_1_1_game_a9b902c8fa0f83aa9b085429c242d0856}\label{class_paoo_game_1_1_game_a9b902c8fa0f83aa9b085429c242d0856}} 
+\index{PaooGame.Game@{PaooGame.Game}!GetMouseManager@{GetMouseManager}}
+\index{GetMouseManager@{GetMouseManager}!PaooGame.Game@{PaooGame.Game}}
+\doxysubsubsection{\texorpdfstring{GetMouseManager()}{GetMouseManager()}}
+{\footnotesize\ttfamily public \mbox{\hyperlink{class_paoo_game_1_1_input_1_1_mouse_manager}{Mouse\+Manager}} Paoo\+Game.\+Game.\+Get\+Mouse\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returneaza managerul evenimentelor mouse-\/ului. 
+
+\mbox{\Hypertarget{class_paoo_game_1_1_game_ad55beb63b3d51c387db3339af0e96a72}\label{class_paoo_game_1_1_game_ad55beb63b3d51c387db3339af0e96a72}} 
+\index{PaooGame.Game@{PaooGame.Game}!GetPlayState@{GetPlayState}}
+\index{GetPlayState@{GetPlayState}!PaooGame.Game@{PaooGame.Game}}
+\doxysubsubsection{\texorpdfstring{GetPlayState()}{GetPlayState()}}
+{\footnotesize\ttfamily public \mbox{\hyperlink{class_paoo_game_1_1_states_1_1_play_state}{Play\+State}} Paoo\+Game.\+Game.\+Get\+Play\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returneaza starea de joc. 
+
+\mbox{\Hypertarget{class_paoo_game_1_1_game_ad47c83496d924b587f8d3f78b8f5e7b1}\label{class_paoo_game_1_1_game_ad47c83496d924b587f8d3f78b8f5e7b1}} 
+\index{PaooGame.Game@{PaooGame.Game}!GetWidth@{GetWidth}}
+\index{GetWidth@{GetWidth}!PaooGame.Game@{PaooGame.Game}}
+\doxysubsubsection{\texorpdfstring{GetWidth()}{GetWidth()}}
+{\footnotesize\ttfamily public int Paoo\+Game.\+Game.\+Get\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returneaza latimea ferestrei. 
+
+\mbox{\Hypertarget{class_paoo_game_1_1_game_a9ad6403ed3c853e7edf8c7de62d623e9}\label{class_paoo_game_1_1_game_a9ad6403ed3c853e7edf8c7de62d623e9}} 
+\index{PaooGame.Game@{PaooGame.Game}!run@{run}}
+\index{run@{run}!PaooGame.Game@{PaooGame.Game}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily public void Paoo\+Game.\+Game.\+run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Functia ce va rula in thread-\/ul creat. 
+
+Aceasta functie va actualiza starea jocului si va redesena tabla de joc (va actualiza fereastra grafica) Initializeaza obiectul game.
+
+$<$ Retine timpul in nanosecunde aferent frame-\/ului anterior.
+
+$<$ Retine timpul curent de executie.
+
+Apelul functiilor Update() \& Draw() trebuie realizat la fiecare 16.\+7 ms sau mai bine spus de 60 ori pe secunda.
+
+$<$ Numarul de frame-\/uri pe secunda.
+
+$<$ Durata unui frame in ns.
+
+Atat timp cat thread-\/ul este pornit Update() si Draw()
+
+Se obtine timpul curent.
+
+Daca diferenta dintre current\+Time si old\+Time este mai mare de 16.\+6 ms.
+
+Actualizeaza pozitiile elementelor.
+
+Deseneaza elementele grafice in fereastra.
+
+Daca run\+State devine Fals, oprim thread-\/ul jocului.\mbox{\Hypertarget{class_paoo_game_1_1_game_a375b293fea9aedc354b931dd2992dfae}\label{class_paoo_game_1_1_game_a375b293fea9aedc354b931dd2992dfae}} 
+\index{PaooGame.Game@{PaooGame.Game}!StartGame@{StartGame}}
+\index{StartGame@{StartGame}!PaooGame.Game@{PaooGame.Game}}
+\doxysubsubsection{\texorpdfstring{StartGame()}{StartGame()}}
+{\footnotesize\ttfamily public synchronized void Paoo\+Game.\+Game.\+Start\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creaza si starteaza firul separat de executie (thread). 
+
+Metoda trebuie sa fie declarata synchronized pentru ca apelul acesteia sa fie semaforizat. Se actualizeaza flagul de stare al thread-\/ului
+
+Se construieste thread-\/ul avand ca parametru obiectul game.
+
+Thread-\/ul creat este lansat in executie( va executa metoda run).
+
+Thread-\/ul este creat si pornit deja.\mbox{\Hypertarget{class_paoo_game_1_1_game_a3697dc249cd795b7aff9f1d48708be69}\label{class_paoo_game_1_1_game_a3697dc249cd795b7aff9f1d48708be69}} 
+\index{PaooGame.Game@{PaooGame.Game}!StopGame@{StopGame}}
+\index{StopGame@{StopGame}!PaooGame.Game@{PaooGame.Game}}
+\doxysubsubsection{\texorpdfstring{StopGame()}{StopGame()}}
+{\footnotesize\ttfamily synchronized void Paoo\+Game.\+Game.\+Stop\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Actualizez starea thread-\/ului.
+
+Metoda join() arunca exceptii motiv pentru care trebuie incadrata intr-\/un block try -\/ catch.
+
+Metoda join() pune un thread in asteptare panca cand un altul isi termina executie. Totusi, in situatia de fata efectul apelului este de oprire a threadului.
+
+In situatia in care apare o exceptie pe ecran vor fi afisate informatii utile pentru depanare.
+
+Thread-\/ul este oprit deja.
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_game_8java}{Game.\+java}}\end{DoxyCompactItemize}
